@@ -28,8 +28,7 @@ def main():
     while True:
         d.measure()
         temp=d.temperature()
-        hum=d.humidity()
-        http_get("https://dweet.io/dweet/for/rezza-dryer?temp=" + str(temp) + "&hum=" + str(hum))
+        http_get("https://dweet.io/dweet/for/rezza-dryer?temp=" + str(temp))
         sleep_ms(10000)
 
 if __name__ == "__main__":
